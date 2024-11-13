@@ -76,7 +76,7 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > drovers is the resulted value from the output of the hireDrovers() function
+   > Drovers is the resulted value from the output of the hireDrovers() function
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
    > Drovers is an array of objects, while drover is a variable.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
@@ -88,11 +88,15 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > It is iterating through the forests property of the areas object and pushing the string forest into an array named journey
+   > This is a for loop that runs as long as forestNumber is less than areas.forests. 
+   > While forestNumber starts at 0 and increases by 1 after each iteration. 
+   > The loop will eventually stop when forestNumber reaches the value of areas.forests. 
+   > For the journey.push("forest"): when each loop iteration, the line adds the string "forest" to the journey array.
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > The database variable in the database module, is an array of objects.
+   > The database variable in the database module, is an object containing two arrays of objects.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > It is defining a parameter, in which it gets its value from the argument passed through the function
+   > It is a parameter, for the hireDrovers function. When hireDrovers is called, the value passed in as herdSize will define how many cattle are in the herd that needs drovers. While the function herdSize is used to determine and calculated numberNeeded, which is the number of drovers required. Dividing herdSize by 10 assuming that one drover is needed per 10 cattle, and used to determine how many drovers need to be hired.
 
 ## When You Are Done
 
