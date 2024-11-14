@@ -29,6 +29,7 @@ let message = ""
 for (const cow of cattle) {
 message += `${cow.breed},`
 }
+message = message.slice(0, -1)
 console.log(message)
 
 
